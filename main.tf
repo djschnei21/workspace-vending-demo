@@ -65,6 +65,6 @@ resource "tfe_variable" "dev_vsphere_user" {
 }
 
 output "test" {
-  value = data.tfe_workspace_ids.dev
+  value = data.tfe_workspace_ids.dev.ids
 }
 
