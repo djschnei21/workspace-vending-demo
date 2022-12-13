@@ -64,6 +64,12 @@ resource "tfe_variable" "dev_vsphere_user" {
   variable_set_id = tfe_variable_set.dev_vsphere.id
 }
 
+resource "tfe_workspace_variable_set" "dev_vsphere" {
+  for_each = data.tfe_workspace_ids.dev.ids
+  variable_set_id = tfe_variable_set.dev_vsphere.id
+  workspace_id    = each.value
+}
+
 output "test" {
   value = data.tfe_workspace_ids.dev.ids
 }
