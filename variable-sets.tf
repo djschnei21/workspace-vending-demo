@@ -129,7 +129,7 @@ data "tfe_workspace_ids" "prod" {
   organization = "djs-tfcb"
 }
 
-resource "tfe_variable_set" "production_vsphere" {
+resource "tfe_variable_set" "prod_vsphere" {
   name          = "Production vSphere Credentials"
   description   = "Required variables for a workspace to connect to Production vSphere"
   organization  = "djs-tfcb"
