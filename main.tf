@@ -40,6 +40,7 @@ resource "tfe_variable_set" "dev_vsphere" {
   name          = "Dev vSphere Credentials"
   description   = "Required variables for a workspace to connect to dev vSphere"
   organization  = "djs-tfcb"
+  workspace_ids = data.tfe_workspace_ids.dev.ids
 }
 
 resource "tfe_variable" "dev_vsphere_server" {
@@ -62,11 +63,5 @@ resource "tfe_variable" "dev_vsphere_user" {
   value           = var.dev_vsphere_user
   category        = "terraform"
   variable_set_id = tfe_variable_set.dev_vsphere.id
-}
-
-resource "tfe_workspace_variable_set" "dev_vsphere" {
-  for_each = data.tfe_workspace_ids.dev
-  variable_set_id = tfe_variable_set.dev_vsphere.id
-  workspace_id    = each.key
 }
 
