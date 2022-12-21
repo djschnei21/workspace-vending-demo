@@ -10,6 +10,7 @@ module "workspace-vending" {
   gh_org = "djschnei21"
   oauth_client_name = "github-test"
   vcs = true
+  projects = true
 
   app_ids = [
     "jenkins"
