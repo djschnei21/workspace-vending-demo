@@ -7,8 +7,8 @@ module "workspace-vending" {
   source = "github.com/djschnei21/terraform-tfe-workspace-vending"
 
   tf_org = "djs-tfcb"
-  # gh_org = "djschnei21"
-  # oauth_client_name = "github-test"
+  gh_org = "djschnei21"
+  oauth_client_name = "github-test"
   vcs = true
 
   app_ids = [
