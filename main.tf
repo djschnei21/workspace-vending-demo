@@ -11,7 +11,8 @@ module "workspace-vending" {
   oauth_client_name = "github-test"
 
   app_ids = [
-    "100"
+    "100",
+    "200"
   ]
   app_envs = [ "development", "uat", "production" ]
 }
