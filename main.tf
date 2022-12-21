@@ -12,7 +12,8 @@ module "workspace-vending" {
   vcs = false
 
   app_ids = [
-    "100"
+    "100",
+    "200"
   ]
   app_envs = [ "development", "uat", "production" ]
 }
