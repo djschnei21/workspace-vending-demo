@@ -9,8 +9,10 @@ module "workspace-vending" {
   tf_org = "djs-tfcb"
   gh_org = "djschnei21"
   oauth_client_name = "github-test"
+  vcs = false
 
   app_ids = [
+    "100"
   ]
   app_envs = [ "development", "uat", "production" ]
 }
