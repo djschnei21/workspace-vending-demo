@@ -13,7 +13,9 @@ module "workspace-vending" {
   projects = true
 
   app_ids = [
-    
+    "tfc-cloud-agents",
+    "jenkins"
   ]
+
   app_envs = [ "development" ]
 }
