@@ -16,7 +16,8 @@ module "workspace-vending" {
     "jenkins",
     "cloud-agents",
     "workload-identity-demo",
-    "dynamic-credentials-demo"
+    "dynamic-credentials-demo",
+    "test-add"
   ]
   app_envs = [ "development" ]
 }
