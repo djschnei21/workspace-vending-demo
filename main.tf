@@ -13,7 +13,10 @@ module "workspace-vending" {
   projects = true
 
   app_ids = [
-    "jenkins"
+    "jenkins",
+    "cloud-agents",
+    "workload-identity-demo",
+    "dynamic-credentials-demo"
   ]
   app_envs = [ "development" ]
 }
