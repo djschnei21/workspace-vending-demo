@@ -14,8 +14,7 @@ module "workspace-vending" {
 
   app_ids = [
     "tfc-cloud-agents",
-    "jenkins",
-    "aws-sandbox-iam-bootstrap"
+    "jenkins"
   ]
 
   app_envs = [ "development" ]
