@@ -1,4 +1,15 @@
 terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+}
+
+data "aws_iam_roles" "list" {
 }
 
 module "workspace-vending" {
@@ -18,4 +29,8 @@ module "workspace-vending" {
   ]
 
   app_envs = [ "development" ]
+}
+
+output "iam_roles" {
+  value = data.aws_iam_roles.list
 }
