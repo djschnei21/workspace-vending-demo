@@ -35,3 +35,7 @@ module "workspace-vending" {
 output "iam_roles" {
   value = data.aws_iam_roles.list
 }
+
+output "workspaces" {
+  value = module.workspace-vending.workspaces
+}
