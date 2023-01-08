@@ -25,11 +25,10 @@ module "workspace-vending" {
   projects = true
 
   app_ids = [
-    "tfc-cloud-agents",
     "jenkins"
   ]
 
-  app_envs = [ "development" ]
+  app_envs = [ "dev", "prod" ]
 }
 
 output "iam_roles" {
