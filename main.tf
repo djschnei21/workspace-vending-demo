@@ -13,7 +13,6 @@ module "workspace-vending" {
   projects = true
 
   app_ids = [
-    "jenkins"
   ]
 
   app_envs = [ "lab" ]
