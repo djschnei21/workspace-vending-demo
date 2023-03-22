@@ -16,7 +16,8 @@ module "workspace-vending" {
     "nomad",
     "consul",
     "vault",
-    "ait01"
+    "ait01",
+    "ait02"
   ]
 
   app_envs = [ "lab" ]
