@@ -15,7 +15,8 @@ module "workspace-vending" {
   app_ids = [
     "nomad",
     "consul",
-    "vault"
+    "vault",
+    "ait01"
   ]
 
   app_envs = [ "lab" ]
